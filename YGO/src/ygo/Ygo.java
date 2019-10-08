@@ -197,6 +197,10 @@ public class Ygo extends javax.swing.JFrame {
     
     private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
+    	Player play1 = new Player(player1.getText(),Integer.parseInt(lifePoint.getText()));
+    	Player play2 = new Player(player2.getText(),Integer.parseInt(lifePoint.getText()));
+    	Player play3 = new Player(player3.getText(),Integer.parseInt(lifePoint.getText()));
+    	Player play4 = new Player(player4.getText(),Integer.parseInt(lifePoint.getText()));
     }                                          
 
     /**
