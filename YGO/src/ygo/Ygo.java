@@ -16,6 +16,7 @@ public class Ygo extends javax.swing.JFrame {
      */
     public Ygo() {
         initComponents();
+        this.setVisible(true);
     }
 
     /**
@@ -201,6 +202,8 @@ public class Ygo extends javax.swing.JFrame {
     	Player play2 = new Player(player2.getText(),Integer.parseInt(lifePoint.getText()));
     	Player play3 = new Player(player3.getText(),Integer.parseInt(lifePoint.getText()));
     	Player play4 = new Player(player4.getText(),Integer.parseInt(lifePoint.getText()));
+    	TwoPlayer window = new TwoPlayer(play1,play2);
+    	this.dispose();
     }                                          
 
     /**
@@ -229,13 +232,6 @@ public class Ygo extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Ygo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Ygo().setVisible(true);
-            }
-        });
     }
 
     // Variables declaration - do not modify                     
