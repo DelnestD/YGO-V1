@@ -204,9 +204,12 @@ public class Ygo extends javax.swing.JFrame {
     	Player play4 = new Player(player4.getText(),Integer.parseInt(lifePoint.getText()));
     	if(p2.isSelected()) {
     		TwoPlayer window = new TwoPlayer(play1,play2);
-    		this.dispose();
+    	}else if(p3.isSelected()) {
+    		ThreePlayer window2 = new ThreePlayer(play1,play2,play3);
+    	}else if(p4.isSelected()) {
+    		FourPlayer window2 = new FourPlayer(play1,play2,play3,play4);
     	}
-    	//this.dispose();
+    	this.dispose();
     }                                          
 
     /**
