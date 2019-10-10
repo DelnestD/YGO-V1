@@ -41,6 +41,7 @@ public class Ygo extends javax.swing.JFrame {
         lifePoint = new javax.swing.JTextField();
         validation = new javax.swing.JButton();
 
+        this.setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         labelNbPlayer.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
