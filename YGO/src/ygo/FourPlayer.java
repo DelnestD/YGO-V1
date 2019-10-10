@@ -76,14 +76,6 @@ public class FourPlayer extends javax.swing.JFrame {
         labelAddition3 = new javax.swing.JLabel();
         labelMonster3 = new javax.swing.JLabel();
         labelSoustraction3 = new javax.swing.JLabel();
-        pLifePoint5 = new javax.swing.JLabel();
-        pName5 = new javax.swing.JLabel();
-        soustraction5 = new javax.swing.JTextField();
-        monster5 = new javax.swing.JTextField();
-        addition5 = new javax.swing.JTextField();
-        labelAddition5 = new javax.swing.JLabel();
-        labelMonster5 = new javax.swing.JLabel();
-        labelSoustraction5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -95,44 +87,17 @@ public class FourPlayer extends javax.swing.JFrame {
 
         jMenuItem1.setText("jMenuItem1");
 
-        pName4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName4.setText("Player 3");
-
-        pLifePoint4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint4.setText("life - point");
-
-        soustraction4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        soustraction4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        soustraction4.setText("0");
-
-        monster4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        monster4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        monster4.setText("0");
-
-        addition4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        addition4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        addition4.setText("0");
-
-        labelAddition4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelAddition4.setText("+");
-
-        labelMonster4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelMonster4.setText("Monster");
-
-        labelSoustraction4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelSoustraction4.setText("-");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pName1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName1.setText("Player 1");
+        pName1.setText(player1.getName());
 
         soustraction1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         soustraction1.setText("0");
 
         pLifePoint1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint1.setText("life - point");
+        pLifePoint1.setText(String.valueOf(lp1));
 
         monster1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         monster1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -152,10 +117,10 @@ public class FourPlayer extends javax.swing.JFrame {
         labelAddition1.setText("+");
 
         pName2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName2.setText("Player 2");
+        pName2.setText(player2.getName());
 
         pLifePoint2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint2.setText("life - point");
+        pLifePoint2.setText(String.valueOf(lp2));
 
         soustraction2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -187,10 +152,10 @@ public class FourPlayer extends javax.swing.JFrame {
         });
 
         pName3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName3.setText("Player 3");
+        pName3.setText(player3.getName());
 
         pLifePoint3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint3.setText("life - point");
+        pLifePoint3.setText(String.valueOf(lp3));
 
         soustraction3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -213,32 +178,32 @@ public class FourPlayer extends javax.swing.JFrame {
         labelSoustraction3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         labelSoustraction3.setText("-");
 
-        pLifePoint5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint5.setText("life - point");
+        pName4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        pName4.setText(player4.getName());
 
-        pName5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName5.setText("Player 4");
+        pLifePoint4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        pLifePoint4.setText(String.valueOf(lp4));
 
-        soustraction5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        soustraction5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        soustraction5.setText("0");
+        soustraction4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        soustraction4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        soustraction4.setText("0");
 
-        monster5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        monster5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        monster5.setText("0");
+        monster4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        monster4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        monster4.setText("0");
 
-        addition5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        addition5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        addition5.setText("0");
+        addition4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        addition4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        addition4.setText("0");
 
-        labelAddition5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelAddition5.setText("+");
+        labelAddition4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        labelAddition4.setText("+");
 
-        labelMonster5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelMonster5.setText("Monster");
+        labelMonster4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        labelMonster4.setText("Monster");
 
-        labelSoustraction5.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        labelSoustraction5.setText("-");
+        labelSoustraction4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        labelSoustraction4.setText("-");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -283,16 +248,16 @@ public class FourPlayer extends javax.swing.JFrame {
                     .addComponent(soustraction3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(labelSoustraction5, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelMonster5, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelAddition5, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelSoustraction4, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMonster4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelAddition4, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addition5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(monster5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pLifePoint5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pName5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(soustraction5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addition4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(monster4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pLifePoint4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pName4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(soustraction4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -353,21 +318,21 @@ public class FourPlayer extends javax.swing.JFrame {
                             .addComponent(addition3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(labelAddition3)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(pName5)
+                        .addComponent(pName4)
                         .addGap(39, 39, 39)
-                        .addComponent(pLifePoint5)
+                        .addComponent(pLifePoint4)
                         .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(soustraction5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelSoustraction5))
+                            .addComponent(soustraction4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelSoustraction4))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(monster5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelMonster5))
+                            .addComponent(monster4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelMonster4))
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(addition5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelAddition5))))
+                            .addComponent(addition4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelAddition4))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(validation)
                 .addGap(24, 24, 24))
@@ -375,7 +340,7 @@ public class FourPlayer extends javax.swing.JFrame {
 
         jMenu5.setText("Option");
 
-        jMenuItem4.setText("jMenuItem4");
+        jMenuItem4.setText("Return");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
@@ -383,7 +348,7 @@ public class FourPlayer extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem4);
 
-        jMenuItem5.setText("jMenuItem5");
+        jMenuItem5.setText("Restart");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -391,7 +356,7 @@ public class FourPlayer extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem5);
 
-        jMenuItem6.setText("jMenuItem6");
+        jMenuItem6.setText("Start Player");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
@@ -437,29 +402,198 @@ public class FourPlayer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {                                       
         // TODO add your handling code here:
-    }                                          
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
-    }                                          
-
+    	Ygo yugioh = new Ygo();
+    	this.dispose();
+    }  
+    
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	lp1=player1.getLifePoint();
+    	lp2=player2.getLifePoint();
+    	lp3=player3.getLifePoint();
+    	lp4=player4.getLifePoint();
+    	pLifePoint1.setText(String.valueOf(lp1));
+		soustraction1.setText("0");
+		monster1.setText("0");
+		addition1.setText("0");
+		pLifePoint2.setText(String.valueOf(lp2));
+		soustraction2.setText("0");
+		monster2.setText("0");
+		addition2.setText("0");
+		pLifePoint3.setText(String.valueOf(lp3));
+		soustraction3.setText("0");
+		monster3.setText("0");
+		addition3.setText("0");
+		pLifePoint4.setText(String.valueOf(lp4));
+		soustraction4.setText("0");
+		monster4.setText("0");
+		addition4.setText("0");
+		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+		pName4.setFont(new java.awt.Font("Tahoma", 2, 18));
+		this.repaint();
+    }    
+    
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	int res = (int) (Math.random()*4+1);
+    	if(res == 1) {
+    		pName1.setFont(new java.awt.Font("Tahoma", 3, 18));
+    		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName4.setFont(new java.awt.Font("Tahoma", 2, 18));
+    	}else if(res == 2){
+    		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName2.setFont(new java.awt.Font("Tahoma", 3, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName4.setFont(new java.awt.Font("Tahoma", 2, 18));
+    	}else if(res == 3){
+    		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 3, 18));
+    		pName4.setFont(new java.awt.Font("Tahoma", 2, 18));
+    	}else {
+    		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName4.setFont(new java.awt.Font("Tahoma", 3, 18));
+    	}
+    	this.repaint();
+    }    
+    
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	Dice dice = new Dice();
+    }      
+    
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
+    	Coin coin = new Coin();
     }                                          
+
+    private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    	changeLP1();
+    	changeLP2();
+    	changeLP3();
+    	changeLP4();
+    }
+    private void changeLP1() {
+    	sous = Integer.parseInt(soustraction1.getText());
+    	add = Integer.parseInt(addition1.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster1.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp1-=res;
+        		}
+        	}else if(mons == 0){
+        		lp1-=sous;
+        	}
+        }
+    	if(add>0) {
+    		lp1+=add;
+    	}
+        pLifePoint1.setText(String.valueOf(lp1));
+		soustraction1.setText("0");
+		monster1.setText("0");
+		addition1.setText("0");
+		this.repaint();
+    }
+    private void changeLP2() {
+    	sous = Integer.parseInt(soustraction2.getText());
+    	add = Integer.parseInt(addition2.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster2.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp2-=res;
+        			if(add>0) {
+        				lp2+=add;
+        			}
+        		}
+        	}else if(mons == 0){
+        		lp2-=sous;
+        		if(add>0) {
+    				lp2+=add;
+    			}
+        	}
+        }else if(sous==0) {
+        	if(add>0) {
+				lp2+=add;
+			}
+    	}
+        pLifePoint2.setText(String.valueOf(lp2));
+		soustraction2.setText("0");
+		monster2.setText("0");
+		addition2.setText("0");
+		this.repaint();
+    }                                         
+    private void changeLP3() {
+    	sous = Integer.parseInt(soustraction3.getText());
+    	add = Integer.parseInt(addition3.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster3.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp3-=res;
+        			if(add>0) {
+        				lp3+=add;
+        			}
+        		}
+        	}else if(mons == 0){
+        		lp3-=sous;
+        		if(add>0) {
+    				lp3+=add;
+    			}
+        	}
+        }else if(sous==0) {
+        	if(add>0) {
+				lp3+=add;
+			}
+    	}
+        pLifePoint3.setText(String.valueOf(lp3));
+		soustraction3.setText("0");
+		monster3.setText("0");
+		addition3.setText("0");
+		this.repaint();
+    }  
+    private void changeLP4() {
+    	sous = Integer.parseInt(soustraction4.getText());
+    	add = Integer.parseInt(addition4.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster4.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp4-=res;
+        			if(add>0) {
+        				lp4+=add;
+        			}
+        		}
+        	}else if(mons == 0){
+        		lp4-=sous;
+        		if(add>0) {
+    				lp4+=add;
+    			}
+        	}
+        }else if(sous==0) {
+        	if(add>0) {
+				lp4+=add;
+			}
+    	}
+        pLifePoint4.setText(String.valueOf(lp4));
+		soustraction4.setText("0");
+		monster4.setText("0");
+		addition4.setText("0");
+		this.repaint();
+    }       
 
     /**
      * @param args the command line arguments
@@ -494,7 +628,6 @@ public class FourPlayer extends javax.swing.JFrame {
     private javax.swing.JTextField addition2;
     private javax.swing.JTextField addition3;
     private javax.swing.JTextField addition4;
-    private javax.swing.JTextField addition5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
@@ -509,37 +642,30 @@ public class FourPlayer extends javax.swing.JFrame {
     private javax.swing.JLabel labelAddition2;
     private javax.swing.JLabel labelAddition3;
     private javax.swing.JLabel labelAddition4;
-    private javax.swing.JLabel labelAddition5;
     private javax.swing.JLabel labelMonster1;
     private javax.swing.JLabel labelMonster2;
     private javax.swing.JLabel labelMonster3;
     private javax.swing.JLabel labelMonster4;
-    private javax.swing.JLabel labelMonster5;
     private javax.swing.JLabel labelSoustraction1;
     private javax.swing.JLabel labelSoustraction2;
     private javax.swing.JLabel labelSoustraction3;
     private javax.swing.JLabel labelSoustraction4;
-    private javax.swing.JLabel labelSoustraction5;
     private javax.swing.JTextField monster1;
     private javax.swing.JTextField monster2;
     private javax.swing.JTextField monster3;
     private javax.swing.JTextField monster4;
-    private javax.swing.JTextField monster5;
     private javax.swing.JLabel pLifePoint1;
     private javax.swing.JLabel pLifePoint2;
     private javax.swing.JLabel pLifePoint3;
     private javax.swing.JLabel pLifePoint4;
-    private javax.swing.JLabel pLifePoint5;
     private javax.swing.JLabel pName1;
     private javax.swing.JLabel pName2;
     private javax.swing.JLabel pName3;
     private javax.swing.JLabel pName4;
-    private javax.swing.JLabel pName5;
     private javax.swing.JTextField soustraction1;
     private javax.swing.JTextField soustraction2;
     private javax.swing.JTextField soustraction3;
     private javax.swing.JTextField soustraction4;
-    private javax.swing.JTextField soustraction5;
     private javax.swing.JButton validation;
     // End of variables declaration                   
 }
