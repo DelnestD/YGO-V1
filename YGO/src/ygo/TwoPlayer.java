@@ -15,10 +15,6 @@ public class TwoPlayer extends javax.swing.JFrame {
     /**
      * Creates new form Ygo2
      */
-	private Player player1;
-	private Player player2;
-	@SuppressWarnings("unused")
-	private int lpStart,sous,mons,add,res;
     public TwoPlayer(String p1,String p2,int lp) {
         this.lpStart = lp;
         initComponents(p1,p2);
@@ -411,5 +407,9 @@ public class TwoPlayer extends javax.swing.JFrame {
     private javax.swing.JTextField soustraction1;
     private javax.swing.JTextField soustraction2;
     private javax.swing.JButton validation;
+    private Player player1;
+	private Player player2;
+	@SuppressWarnings("unused")
+	private int lpStart,sous,mons,add,res;
     // End of variables declaration                   
 }
