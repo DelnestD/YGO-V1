@@ -363,6 +363,16 @@ public class ThreePlayer extends javax.swing.JFrame {
     	changeLP1();
     	changeLP2();
     	changeLP3();
+    	if(player1.getLifePoint()<=0) {
+    		@SuppressWarnings("unused")
+			Winner win = new Winner(player1.getName());
+    	}else if(player2.getLifePoint()<=0) {
+    		@SuppressWarnings("unused")
+			Winner win2 = new Winner(player2.getName());
+    	}else if(player3.getLifePoint()<=0) {
+    		@SuppressWarnings("unused")
+			Winner win3 = new Winner(player3.getName());
+    	}
     }
     private void changeLP1() {
     	sous = Integer.parseInt(soustraction1.getText());
