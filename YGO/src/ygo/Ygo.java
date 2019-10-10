@@ -14,6 +14,7 @@ public class Ygo extends javax.swing.JFrame {
     /**
      * Creates new form Ygo
      */
+	private int lp;
     public Ygo() {
         initComponents();
         this.setVisible(true);
@@ -198,12 +199,13 @@ public class Ygo extends javax.swing.JFrame {
     
     private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    	Player play1 = new Player(player1.getText(),Integer.parseInt(lifePoint.getText()));
-    	Player play2 = new Player(player2.getText(),Integer.parseInt(lifePoint.getText()));
-    	Player play3 = new Player(player3.getText(),Integer.parseInt(lifePoint.getText()));
-    	Player play4 = new Player(player4.getText(),Integer.parseInt(lifePoint.getText()));
+    	lp = Integer.parseInt(lifePoint.getText());
+    	Player play1 = new Player(player1.getText());
+    	Player play2 = new Player(player2.getText());
+    	Player play3 = new Player(player3.getText());
+    	Player play4 = new Player(player4.getText());
     	if(p2.isSelected()) {
-    		TwoPlayer window = new TwoPlayer(play1,play2);
+    		TwoPlayer window = new TwoPlayer(player1.getText(),player2.getText(),lp);
     	}else if(p3.isSelected()) {
     		ThreePlayer window2 = new ThreePlayer(play1,play2,play3);
     	}else if(p4.isSelected()) {
