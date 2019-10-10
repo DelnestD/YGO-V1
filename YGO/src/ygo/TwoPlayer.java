@@ -353,7 +353,7 @@ public class TwoPlayer extends javax.swing.JFrame {
         		if(res >0) {
         			lp2-=res;
         			if(add>0) {
-        				lp1+=add;
+        				lp2+=add;
         			}
         		}
         	}else if(mons == 0){

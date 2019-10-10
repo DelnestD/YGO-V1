@@ -207,7 +207,7 @@ public class Ygo extends javax.swing.JFrame {
     	}else if(p3.isSelected()) {
     		ThreePlayer window2 = new ThreePlayer(play1,play2,play3);
     	}else if(p4.isSelected()) {
-    		FourPlayer window2 = new FourPlayer(play1,play2,play3,play4);
+    		FourPlayer window3 = new FourPlayer(play1,play2,play3,play4);
     	}
     	this.dispose();
     }                                          

@@ -144,11 +144,6 @@ public class Dice extends javax.swing.JFrame {
     	d3 = (int) (Math.random()*6+1);
     	d4 = (int) (Math.random()*6+1);
     	d5 = (int) (Math.random()*6+1);
-    	jLabel2.setText("");
-    	jLabel3.setText("");
-    	jLabel4.setText("");
-    	jLabel5.setText("");
-    	jLabel6.setText("");
     	switch(numb) {
     	case 5:
     		jLabel5.setText(String.valueOf(d5));

@@ -79,14 +79,14 @@ public class ThreePlayer extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pName1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName1.setText("Player 1");
+        pName1.setText(player1.getName());
 
         soustraction1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         soustraction1.setText("0");
 
         pLifePoint1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint1.setText("life - point");
+        pLifePoint1.setText(String.valueOf(lp1));
 
         monster1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         monster1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -106,10 +106,10 @@ public class ThreePlayer extends javax.swing.JFrame {
         labelAddition1.setText("+");
 
         pName2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName2.setText("Player 2");
+        pName2.setText(player2.getName());
 
         pLifePoint2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint2.setText("life - point");
+        pLifePoint2.setText(String.valueOf(lp2));
 
         soustraction2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -141,10 +141,10 @@ public class ThreePlayer extends javax.swing.JFrame {
         });
 
         pName3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pName3.setText("Player 3");
+        pName3.setText(player3.getName());
 
         pLifePoint3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        pLifePoint3.setText("life - point");
+        pLifePoint3.setText(String.valueOf(lp3));
 
         soustraction3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         soustraction3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -273,7 +273,7 @@ public class ThreePlayer extends javax.swing.JFrame {
 
         jMenu5.setText("Option");
 
-        jMenuItem4.setText("jMenuItem4");
+        jMenuItem4.setText("Return");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
@@ -281,7 +281,7 @@ public class ThreePlayer extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem4);
 
-        jMenuItem5.setText("jMenuItem5");
+        jMenuItem5.setText("Restart");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -289,7 +289,7 @@ public class ThreePlayer extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem5);
 
-        jMenuItem6.setText("jMenuItem6");
+        jMenuItem6.setText("Start Player");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
@@ -335,30 +335,153 @@ public class ThreePlayer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {                                       
         // TODO add your handling code here:
-    }                                          
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
-    }                                          
-
+    	Ygo yugioh = new Ygo();
+    	this.dispose();
+    }  
+    
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	lp1=player1.getLifePoint();
+    	lp2=player2.getLifePoint();
+    	lp3=player3.getLifePoint();
+    	pLifePoint1.setText(String.valueOf(lp1));
+		soustraction1.setText("0");
+		monster1.setText("0");
+		addition1.setText("0");
+		pLifePoint2.setText(String.valueOf(lp2));
+		soustraction2.setText("0");
+		monster2.setText("0");
+		addition2.setText("0");
+		pLifePoint3.setText(String.valueOf(lp3));
+		soustraction3.setText("0");
+		monster3.setText("0");
+		addition3.setText("0");
+		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+		this.repaint();
+    }    
+    
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	int res = (int) (Math.random()*3+1);
+    	if(res == 1) {
+    		pName1.setFont(new java.awt.Font("Tahoma", 3, 18));
+    		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+    	}else if(res == 2){
+    		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName2.setFont(new java.awt.Font("Tahoma", 3, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 2, 18));
+    	}else {
+    		pName2.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName1.setFont(new java.awt.Font("Tahoma", 2, 18));
+    		pName3.setFont(new java.awt.Font("Tahoma", 3, 18));
+    	}
+    	this.repaint();
+    }    
+    
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
-    }                                          
-
+    	Dice dice = new Dice();
+    }      
+    
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
+    	Coin coin = new Coin();
     }                                          
 
+    private void validationActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    	changeLP1();
+    	changeLP2();
+    	changeLP3();
+    }
+    private void changeLP1() {
+    	sous = Integer.parseInt(soustraction1.getText());
+    	add = Integer.parseInt(addition1.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster1.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp1-=res;
+        		}
+        	}else if(mons == 0){
+        		lp1-=sous;
+        	}
+        }
+    	if(add>0) {
+    		lp1+=add;
+    	}
+        pLifePoint1.setText(String.valueOf(lp1));
+		soustraction1.setText("0");
+		monster1.setText("0");
+		addition1.setText("0");
+		this.repaint();
+    }
+    private void changeLP2() {
+    	sous = Integer.parseInt(soustraction2.getText());
+    	add = Integer.parseInt(addition2.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster2.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp2-=res;
+        			if(add>0) {
+        				lp2+=add;
+        			}
+        		}
+        	}else if(mons == 0){
+        		lp2-=sous;
+        		if(add>0) {
+    				lp2+=add;
+    			}
+        	}
+        }else if(sous==0) {
+        	if(add>0) {
+				lp2+=add;
+			}
+    	}
+        pLifePoint2.setText(String.valueOf(lp2));
+		soustraction2.setText("0");
+		monster2.setText("0");
+		addition2.setText("0");
+		this.repaint();
+    }                                         
+    private void changeLP3() {
+    	sous = Integer.parseInt(soustraction3.getText());
+    	add = Integer.parseInt(addition3.getText());
+        if(sous>0) {
+        	mons = Integer.parseInt(monster3.getText());
+        	if(mons>0) {
+        		res=sous-mons;
+        		if(res >0) {
+        			lp3-=res;
+        			if(add>0) {
+        				lp3+=add;
+        			}
+        		}
+        	}else if(mons == 0){
+        		lp3-=sous;
+        		if(add>0) {
+    				lp3+=add;
+    			}
+        	}
+        }else if(sous==0) {
+        	if(add>0) {
+				lp3+=add;
+			}
+    	}
+        pLifePoint3.setText(String.valueOf(lp3));
+		soustraction3.setText("0");
+		monster3.setText("0");
+		addition3.setText("0");
+		this.repaint();
+    } 
     /**
      * @param args the command line arguments
      */
